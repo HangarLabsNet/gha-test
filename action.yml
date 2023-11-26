@@ -1,0 +1,6 @@
+name: AWS-ECS-ALB
+description: Deploy AWS + ECS + ALB
+runs:
+  using: node16
+  main: index.js
+  
