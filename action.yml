@@ -1,6 +1,9 @@
 name: AWS-ECS-ALB
 description: Deploy AWS + ECS + ALB
+inputs:
+  service-name:
+    required: true
+    description: Unique service name
 runs:
   using: node16
   main: index.js
-  
