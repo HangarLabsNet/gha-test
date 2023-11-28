@@ -16,6 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: app
       - run: echo "Hello! "$VAR1
       - run: ls -la
       - run: env
