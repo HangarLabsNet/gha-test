@@ -1,10 +1,18 @@
 name: Test reusable action
 on:
   workflow_call:
+    inputs:
+      var1:
+        type: string
+        required: true
+        default: 123
+
+env:
+  VAR1: ${{ input.var1 }}
 
 jobs:
   greet:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Hello!"
+      - run: echo "Hello!"$VAR1

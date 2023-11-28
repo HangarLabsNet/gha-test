@@ -2,7 +2,8 @@ name: Test action
 
 on:
   push:
-
+    branches:
+      - disabled
 jobs:
   
   test:
