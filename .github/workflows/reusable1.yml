@@ -15,4 +15,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Hello!"$VAR1
+      - run: echo "Hello! "$VAR1
+      - run: ls -la
