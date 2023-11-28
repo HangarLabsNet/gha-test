@@ -20,10 +20,10 @@ jobs:
           path: app
       - uses: actions/checkout@v4
         with:
-          path: app
+          path: local
           reposiroty: hangarlabsnet/gha-test@main
       - run: echo "Hello! "$VAR1
       - run: ls -la
       - run: ls -la app
-      - run: ls -la templates
+      - run: ls -la local
       - run: env
