@@ -9,7 +9,7 @@ on:
 
 env:
   VAR1: ${{ inputs.var1 }}
-  ALLGH: ${{ github }}
+  TMPVAL: ${{ github.workflow }}
 
 jobs:
   greet:
@@ -25,7 +25,7 @@ jobs:
           repository: hangarlabsnet/gha-test
           ref: main
       - run: echo "Hello! "$VAR1
-      - run: echo $ALLGH
+      - run: echo $TMPVAL
       - run: ls -la
       - run: ls -la app
       - run: ls -la local
