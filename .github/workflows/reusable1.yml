@@ -8,7 +8,7 @@ on:
         default: 123
 
 env:
-  VAR1: ${{ input.var1 }}
+  VAR1: ${{ inputs.var1 }}
 
 jobs:
   greet:
