@@ -15,5 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
       - run: echo "Hello! "$VAR1
       - run: ls -la
